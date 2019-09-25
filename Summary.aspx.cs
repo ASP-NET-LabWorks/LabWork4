@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace LabWork4
 {
-    public partial class About : Page
+    public partial class Summary : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TextBoxCurrentDate.Text = DateTime.Now.ToString("yyyy-MM-dd");
         }
     }
 }
