@@ -79,7 +79,7 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="TextBoxDate2" ValidationGroup="g3" runat="server" ErrorMessage="Не указана вторая дата">
             <p class="text-danger">Не указана вторая дата</p>
         </asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidatorDates" Type="Date" ControlToValidate="TextBoxDate1" Operator="LessThan" ControlToCompare="TextBoxDate2" runat="server" ErrorMessage="CompareValidator">
+        <asp:CompareValidator ID="CompareValidatorDates" Type="Date" ControlToValidate="TextBoxDate1" Operator="GreaterThan" ControlToCompare="TextBoxDate2" runat="server" ErrorMessage="CompareValidator">
             <p class="text-danger">Указана недопустимая пара дат</p>
         </asp:CompareValidator>
     </div>
